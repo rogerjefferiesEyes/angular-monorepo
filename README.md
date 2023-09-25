@@ -22,7 +22,7 @@ npm i -D @applitools/eyes-cypress
 
 
 
-## Manual Configuration of `@applitools/eyes-cypress` plugin
+## Manual Setup of `@applitools/eyes-cypress` plugin
 
 The `@applitools/eyes-cypress` plugin will be configured manually in this example. Follow the steps documented below to achieve this.
 
