@@ -1,4 +1,4 @@
-# Applitools Eyes NX Angular MonoRepo/ Cypress Example
+# Applitools Eyes NX Angular MonoRepo / Cypress Example
 
 This is an example for using Applitools Eyes in E2E testing for an NX Monorepo.
 Details for setting up the @applitools/eyes-cypress plugin inside of an NX Monorepo are also
