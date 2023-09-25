@@ -54,7 +54,7 @@ Add the following import statement to Cypress support file, under all 'e2e' proj
 ```typescript
 import '@applitools/eyes-cypress/commands'
 ```
-
+<br>
 
 **3. (OPTIONAL) Add or update types and moduleResolution for `@applitools/eyes-cypress`, in tsconfig.json:** 
 
@@ -69,7 +69,7 @@ import '@applitools/eyes-cypress/commands'
   }
 }
 ```
-
+<br>
 
 **4. (OPTIONAL) Add `applitools.config.js` to root directory of node project, to configure global settings for `@applitools/eyes-cypress`.**
 
