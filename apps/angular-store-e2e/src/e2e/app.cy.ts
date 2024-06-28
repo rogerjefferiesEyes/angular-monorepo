@@ -2,8 +2,13 @@ describe('angular-store', () => {
   beforeEach(() => {
     cy.visit('/')
 
-    // Pass empty parameter, to default to global Eyes configuration in applitools.config.js
-    cy.eyesOpen();
+    cy.eyesOpen({
+      appName: (Cypress as any).mocha.getRunner().suite.ctx._runnable.parent.title,
+      batch: {
+          name: 'Angular Inventory Example',
+          notifyOnCompletion: true
+      }
+    });
   });
 
   it('should display welcome message', () => {

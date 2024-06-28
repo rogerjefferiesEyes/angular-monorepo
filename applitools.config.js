@@ -16,7 +16,7 @@ module.exports = {
             }
         }
     ],
-    showLogs: true,
+    showLogs: false,
     failCypressOnDiff: true,
     notifyOnCompletion: true,
     batch: {
