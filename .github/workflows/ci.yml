@@ -9,7 +9,7 @@ on:
 
 env: 
   APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-  APPLITOOLS_BATCH_ID: ${{ github.sha }}
+  APPLITOOLS_BATCH_ID: ${{ github.event.pull_request.head.sha || github.sha }}
   APPLITOOLS_SERVER_URL : "https://eyesapi.applitools.com"
 
 jobs:
@@ -37,4 +37,4 @@ jobs:
             node_modules
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
-      - run: pnpm nx run angular-store-e2e:e2e --headed
+      - run: pnpm nx run angular-store-e2e:e2e
