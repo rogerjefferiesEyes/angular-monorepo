@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - '**'
-  pull_request:
-    branches:
-      - '**'
+  # pull_request:
+  #   branches:
+  #     - '**'
 
 env: 
   APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
