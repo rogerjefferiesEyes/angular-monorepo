@@ -30,6 +30,7 @@ jobs:
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
       - run: pnpm install --no-frozen-lockfile
+      - run: npx cypress install
       - name: Cache npm dependencies
         uses: actions/cache/save@v3
         with:
@@ -37,5 +38,5 @@ jobs:
             node_modules
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
-      - run: cypress install
+      - run: npx cypress install
       - run: pnpm nx run angular-store-e2e:e2e
