@@ -1,8 +1,8 @@
 name: CI
 on:
-  push:
-    branches:
-      - '**'
+  # push:
+  #   branches:
+  #     - '**'
   pull_request:
     branches:
       - '**'
@@ -38,5 +38,5 @@ jobs:
             node_modules
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
-      - run: npx cypress install
+      # - run: npx cypress install
       - run: pnpm nx run angular-store-e2e:e2e
