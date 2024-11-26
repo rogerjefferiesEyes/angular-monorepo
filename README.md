@@ -149,3 +149,4 @@ Clone it locally, install all dependencies using `npm install`. You can then run
 - `npx nx build` to build the Angular application
 - `npx nx serve` to serve the app
 - you can use `npx nx graph` to visualize the structure
+

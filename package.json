@@ -28,7 +28,7 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "~16.2.0",
     "@angular/language-service": "~16.2.0",
-    "@applitools/eyes-cypress": "^3.38.0",
+    "@applitools/eyes-cypress": "^3.47.0",
     "@nx/cypress": "16.9.0-rc.0",
     "@nx/eslint-plugin": "16.9.0-rc.0",
     "@nx/jest": "16.9.0-rc.0",
